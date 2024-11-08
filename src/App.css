@@ -1,0 +1,13 @@
+@media only screen and (min-width:1px){
+html {
+    padding:1.5em;
+}
+}
+@media only screen and (min-width:482px){
+
+}
+@media only screen and (min-width:768px){
+    html {
+        margin: 1em 3em;
+    }
+}
