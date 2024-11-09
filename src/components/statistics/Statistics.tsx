@@ -1,34 +1,8 @@
 import Card from "../cards/Card";
 import "./Statistics.css";
-import iconBrandRecognition from "/icon-brand-recognition.svg";
-import iconDetailedRecords from "/icon-detailed-records.svg";
-import iconFullyCustomizable from "../../../public/icon-fully-customizable.svg";
+import { featuresArray } from "../../utils/data";
 
 const Statistics = () => {
-  const featuresArray = [
-    {
-      id: 1,
-      icon: iconBrandRecognition,
-      title: "Brand Recognition",
-      content:
-        "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.",
-    },
-    {
-      id: 2,
-      icon: iconDetailedRecords,
-      title: "Detailed Records",
-      content:
-        "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.",
-    },
-    {
-      id: 3,
-      icon: iconFullyCustomizable,
-      title: "Fully Customizable",
-      content:
-        "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
-    },
-  ];
-
   return (
     <section className="container">
       <div className="card-item">
@@ -52,7 +26,7 @@ const Statistics = () => {
                  title={feature.title}
                  cardText={feature.content}
                />
-              {index !== 2 && <span className="cyan-line"></span>}
+              {index !== featuresArray.length-1 && <span className="cyan-line"></span>}
              </div>
       ))
       }

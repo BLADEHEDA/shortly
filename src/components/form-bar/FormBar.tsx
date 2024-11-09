@@ -1,5 +1,5 @@
 import { Button, Form, Input, message, Row, Col } from "antd";
-import { formButtonStyle } from "../../styles/CustomStyles";
+import { formButtonStyle } from "../../utils/CustomStyles";
 import "./FormBar.css";
 
 const FormBar = () => {

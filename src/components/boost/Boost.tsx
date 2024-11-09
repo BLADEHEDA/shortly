@@ -1,5 +1,5 @@
 import { Button } from "antd";
-import { heroButtonStyle } from "../../styles/CustomStyles";
+import { heroButtonStyle } from "../../utils/CustomStyles";
 import './Boost.css'
 
 const Boost = () => {

@@ -1,6 +1,6 @@
 import "./Hero.css";
 import { Button } from "antd";
-import { heroButtonStyle } from "../../styles/CustomStyles";
+import { heroButtonStyle } from "../../utils/CustomStyles";
 import illustration from "/illustration-working.svg";
 
 const Hero = () => {

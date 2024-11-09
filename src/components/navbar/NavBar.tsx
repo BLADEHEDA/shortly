@@ -1,6 +1,6 @@
 import logo from "/logo.svg";
 import { Button } from "antd";
-import { buttonStyle, desktopButtonStyle } from "../../styles/CustomStyles";
+import { buttonStyle, desktopButtonStyle } from "../../utils/CustomStyles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
