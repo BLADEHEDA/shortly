@@ -39,12 +39,12 @@
 
 @media only screen and (min-width: 1024px) {
   .main-section{
-    padding: 2.5em 2.5em 1em 2.5em;
-    margin-top: -6em;
-    border: solid 1px black;
   }
   .formData {
     background-image: url("../../../public/bg-boost-desktop.svg");
+    padding: 2.5em 2.5em 1em 2.5em;
+    margin-top: -6em;
+    border: solid 1px black;
   }
   .horisontal{
     display: none;
@@ -52,20 +52,15 @@
   .shortened{
    display: flex;
    justify-content: space-between;
+   margin-top: 1em;
   }
   .link-active-one {
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 150px; 
-    display: inline-block; */
       flex: 70%;
   }
   .link-active-two{
     flex: 30%;
     display: flex;
     justify-content: space-between;
-    border: solid 1px blue ;
   }
   .shorten-link{
     color: #2acfcf;

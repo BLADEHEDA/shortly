@@ -7,10 +7,15 @@ import "./FormBar.css";
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
+interface shortened{
+  original:string,
+  shortened:string
+}
+
 const FormBar = () => {
   const [form] = Form.useForm();
   const [shortenedURL, setShortenedURL] = useState("");
-  const [urls, setUrls] = useState([]); // State to store list of shortened URLs
+  const [urls, setUrls] = useState<shortened[]>([]); 
   const [copied, setcopied] = useState(false);
 
   const onFinish = async (values: { url: string }) => {
@@ -37,10 +42,10 @@ const FormBar = () => {
       // Check if the response contains a shortened URL
       if (data && data.shortUrl) {
         const shortURL = data.shortUrl;
-        setShortenedURL(shortURL); // Store the shortened URL in state
-        message.success(`Shortened URL: ${shortURL}`);
+        setShortenedURL(shortURL); 
+        message.success(`Shortened URL: ${shortenedURL}`);
 
-        // Append the new URL to the list of URLs
+        // Append the new URL to the list of URLs 
         setUrls([...urls, { original: urlToShorten, shortened: shortURL }]);
 
         // Reset the form field
@@ -98,9 +103,9 @@ const FormBar = () => {
             </Col>
           </Row>
         </Form>
-
-        {/* Display the list of shortened URLs */}
-        <div className="url-list">
+    </section>
+            {/* Display the list of shortened URLs */}
+            <div className="url-list">
           {urls.map((url, index) => (
             <section className="shortened" key={index}>
               <article className="link-active-one">
@@ -132,7 +137,6 @@ const FormBar = () => {
             </section>
           ))}
         </div>
-    </section>
     </section>
   );
 };
