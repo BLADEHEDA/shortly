@@ -1,10 +1,34 @@
 import Card from "../cards/Card";
 import "./Statistics.css";
-import brand from "/icon-brand-recognition.svg";
-import detailedRecords from "/icon-detailed-records.svg";
-import fullyCustomizable from "../../../public/icon-fully-customizable.svg";
+import iconBrandRecognition from "/icon-brand-recognition.svg";
+import iconDetailedRecords from "/icon-detailed-records.svg";
+import iconFullyCustomizable from "../../../public/icon-fully-customizable.svg";
 
 const Statistics = () => {
+  const featuresArray = [
+    {
+      id: 1,
+      icon: iconBrandRecognition,
+      title: "Brand Recognition",
+      content:
+        "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.",
+    },
+    {
+      id: 2,
+      icon: iconDetailedRecords,
+      title: "Detailed Records",
+      content:
+        "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.",
+    },
+    {
+      id: 3,
+      icon: iconFullyCustomizable,
+      title: "Fully Customizable",
+      content:
+        "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
+    },
+  ];
+
   return (
     <section className="container">
       <div className="card-item">
@@ -14,37 +38,25 @@ const Statistics = () => {
           statistics dashboard{" "}
         </p>
       </div>
+ 
       <div className="card-container">
-        <div className="card-item">
-          <Card
-            image={brand}
-            alt={"brand-logo"}
-            title={"Brand Recognition"}
-            cardText={
-              "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your content."
-            }
-          />
-        </div>
-        <div className="card-item" id="card2">
-          <Card
-            image={detailedRecords}
-            alt={"brand-logo"}
-            title={"Brand Recognition"}
-            cardText={
-              "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your content."
-            }
-          />
-        </div>
-        <div className="" id="card3">
-          <Card
-            image={fullyCustomizable}
-            alt={"brand-logo"}
-            title={"Brand Recognition"}
-            cardText={
-              "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your content."
-            }
-          />
-        </div>
+      {featuresArray.map((feature,index)=>(
+               <div
+               key={feature.id}
+               className="card-item"
+               id={`card${index + 1}`} 
+               >
+               <Card
+                 image={feature.icon}
+                 alt={feature.title}
+                 title={feature.title}
+                 cardText={feature.content}
+               />
+              {index !== 2 && <span className="cyan-line"></span>}
+             </div>
+      ))
+      }
+      
       </div>
     </section>
   );

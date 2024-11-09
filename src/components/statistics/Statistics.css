@@ -16,6 +16,14 @@
   text-align: center;
   margin-top: 1em;
 }
+  .cyan-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px; 
+    height: 40px; 
+    background-color: #2acfcf; 
+  }
 @media only screen and (min-width: 1024px) {
   .card-container {
     display: flex;
@@ -24,6 +32,7 @@
   }
   .card-item {
     margin: 0em 1em;
+    position: relative;
   }
   #card2 {
     margin-top: 3em;
@@ -37,4 +46,13 @@
     margin: 0 auto;
     margin-top: 1em;
   }
+  .cyan-line {
+    top: 40%;
+    transform: translateY(400%) translateX(0);
+    left:100%;
+    width: 60px; 
+    height: 15px;
+  }
+  
+  
 }
