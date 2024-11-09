@@ -1,0 +1,35 @@
+.boost-container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3b3054;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("../../../public//bg-boost-mobile.svg");
+}
+.boost-header {
+  font-size: 2em;
+  width: 100%;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5em;
+}
+.button {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .boost-container {
+    padding: 4em;
+    background-image: url("../../../public/bg-boost-desktop.svg");
+  }
+  .button {
+    width: 15%;
+  }
+  .boost-header {
+    font-size: 2.3em;
+  }
+}

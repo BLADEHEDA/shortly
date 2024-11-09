@@ -1,13 +1,20 @@
-@media only screen and (min-width:1px){
-html {
-    padding:1.5em;
+@media only screen and (min-width: 1px) {
+  .navTop {
+    padding: 1.5em;
+  }
+  .navBottom {
+    padding: 1.5em;
+    background-color: #bfbfbf;
+    margin-top: 5em;
+  }
 }
-}
-@media only screen and (min-width:482px){
-
-}
-@media only screen and (min-width:768px){
-    html {
-        margin: 1em 3em;
-    }
+@media only screen and (min-width: 1024px) {
+  .navTop {
+    padding: 2em 7em;
+  }
+  .navBottom {
+    padding: 2em 7em;
+    background-color: #bfbfbf;
+    margin-top: 5em;
+  }
 }

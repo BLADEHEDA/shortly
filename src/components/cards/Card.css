@@ -1,0 +1,42 @@
+.containers {
+  background-color: white;
+  text-align: center;
+  padding: 1.5em;
+  margin-top: 5em;
+  border-radius: 7px;
+}
+.card-header {
+  font-size: 2em;
+  font-weight: 800;
+}
+.card-text {
+  font-size: 1em;
+  margin-top: 1.1em;
+}
+.image-cpontianer {
+  background-color: #3b3054;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  padding: 2em;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4em;
+}
+@media only screen and (min-width: 1024px) {
+  .card-header {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-top: 1em;
+  }
+  .card-text {
+    font-size: 1em;
+    margin-top: 1.2;
+  }
+  .image-cpontianer {
+    margin: 0em;
+    margin-top: -5em;
+  }
+}

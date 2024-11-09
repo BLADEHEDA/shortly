@@ -1,0 +1,14 @@
+.formData {
+  margin-top: -6.5em;
+  background-color: #3b3054;
+  padding: 1.5em 1.5em 0em 1.5em;
+  border-radius: 1em;
+  background-image: url("../../../public/bg-boost-mobile.svg");
+}
+@media only screen and (min-width: 1024px) {
+  .formData {
+    margin-top: -6em;
+    background-image: url("../../../public/bg-boost-desktop.svg");
+    padding: 2.5em 2.5em 1em 2.5em;
+  }
+}

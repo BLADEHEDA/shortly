@@ -1,9 +1,9 @@
-import logo from "../../../public/logo.svg";
+import logo from "/logo.svg";
 import { Button } from "antd";
+import { buttonStyle, desktopButtonStyle } from "../../styles/CustomStyles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
-import { buttonStyle, desktopButtonStyle } from "../../styles/CustomStyles";
 import { useState } from "react";
 
 const NavBar = () => {
@@ -46,7 +46,7 @@ const NavBar = () => {
         <div className="desktop">
           <div className="nav-left">
             <div className="logo">
-              <img className="logo" src={logo} alt="" />
+              <img className="logo" src={logo} alt="navbar.logo" />
             </div>
             <div className="nav-menus-desktop">
               <div className="nav-links-desktop">Features</div>
@@ -67,7 +67,6 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      {/* <Button type="primary" style={{ background: "#34D3D0"}}>Primary Button</Button> */}
     </section>
   );
 };
