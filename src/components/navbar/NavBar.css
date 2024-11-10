@@ -10,6 +10,9 @@
   .hamburger {
     font-size: 2em;
   }
+  .logo{
+    margin-top: 2px;
+  }
   .nav-menus {
     background-color: #393053;
     display: flex;
