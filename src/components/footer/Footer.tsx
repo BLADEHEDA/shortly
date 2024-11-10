@@ -3,7 +3,6 @@ import iconTwitter from "/icon-twitter.svg";
 import iconPinterest from "/icon-pinterest.svg";
 import iconInstagram from "/icon-instagram.svg";
 import "./Footer.css";
-import logo from "/logo.svg";
 
 const Footer = () => {
   return (
@@ -33,7 +32,7 @@ const Footer = () => {
           <img src={iconFacebook} alt="facebook" />
         </div>
         <div className="">
-          <img src={iconFacebook} alt="facebook" />
+          <img src={iconTwitter} alt="facebook" />
         </div>
         <div className="">
           <img src={iconPinterest} alt="facebook" />

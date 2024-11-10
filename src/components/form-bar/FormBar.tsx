@@ -22,7 +22,7 @@ const FormBar = () => {
     const urlToShorten = values.url;
 
     try {
-      console.log("Original URL:", urlToShorten);
+      console.log(urlToShorten,copied);
 
       // Send a POST request to the Rebrandly API for URL shortening
       const response = await fetch("https://api.rebrandly.com/v1/links", {
