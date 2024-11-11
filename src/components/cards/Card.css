@@ -1,24 +1,26 @@
 .containers {
   background-color: white;
   text-align: center;
-  padding: 1.5em;
-  margin-top: 5em;
+  padding: 2em;
+  margin-top: 6em;
   border-radius: 7px;
 }
 .card-header {
   font-size: 1.3em;
   font-weight: 800;
+  color: var(--Very-Dark-Blue);
 }
 .card-text {
   font-size: 1em;
   margin-top: 1em;
+  color: var(--Gray);
 }
 .image-cpontianer {
   background-color: #3b3054;
   height: 2em;
   width: 2em;
   border-radius: 50%;
-  padding: 2em;
+  padding: 2.75em;
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -28,6 +30,7 @@
 @media only screen and (min-width: 1024px) {
   .containers {
     text-align: start;
+    /* padding-bottom: 3em; */
   }
   .card-header {
     font-size: 1.5em;
@@ -36,9 +39,10 @@
   }
   .card-text {
     font-size: 0.95em;
+    /* border: solid 1px red; */
   }
   .image-cpontianer {
     margin: 0em;
-    margin-top: -4em;
+    margin-top: -5em;
   }
 }

@@ -1,3 +1,9 @@
+:root{
+--Gray: hsl(0, 0%, 75%);
+--Grayish-Violet: hsl(257, 7%, 63%);
+--Dark-Violet: hsl(257, 27%, 26%);
+}
+
 @media only screen and (min-width: 1px) {
   .desktop {
     display: none;
@@ -14,7 +20,8 @@
     margin-top: 2px;
   }
   .nav-menus {
-    background-color: #393053;
+    /* background-color: #393053; */
+    background-color: var(--Dark-Violet);
     display: flex;
     flex-direction: column;
     padding: 2.5em;
@@ -26,7 +33,7 @@
   }
   .nav-links {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0.5em 0em;
     text-align: center;
   }
@@ -55,6 +62,8 @@
   .nav-links-desktop {
     color: #232127;
     font-weight: 600;
-    margin: 0.25em 2em;
+    margin: 0.45em 2em;
+    font-size: 15px;
+    color: var(--Gray);
   }
 }

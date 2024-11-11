@@ -26,7 +26,8 @@ const Statistics = () => {
                  title={feature.title}
                  cardText={feature.content}
                />
-              {index !== featuresArray.length-1 && <span className="cyan-line"></span>}
+              {index !== featuresArray.length-1 && 
+              <span className="cyan-line" id={`${index === 1 ? 'line2' : ''}`}></span>}
              </div>
       ))
       }

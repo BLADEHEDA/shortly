@@ -9,7 +9,7 @@
     justify-content: space-between;
     width: 50%;
     margin: 0 auto;
-    margin-top: 2em;
+    margin-top: 4em;
 }
 .foooter-logo{
     font-size: 2em;
@@ -25,6 +25,9 @@ h3{
 p{
     font-size: 1.1em;
     margin-top: 0.5em;
+}
+.foooter p{
+    margin-top: 1em;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -46,7 +49,7 @@ p{
     .foooter{
         text-align: start;
         flex: 20%;
-        font-size: 14px;
+        font-size: 13px;
     }
     .foooter-logo{
         margin-right:3em;
