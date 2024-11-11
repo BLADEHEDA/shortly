@@ -6,12 +6,12 @@
   border-radius: 7px;
 }
 .card-header {
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: 800;
 }
 .card-text {
   font-size: 1em;
-  margin-top: 1.1em;
+  margin-top: 1em;
 }
 .image-cpontianer {
   background-color: #3b3054;
@@ -26,17 +26,19 @@
   margin-top: -4em;
 }
 @media only screen and (min-width: 1024px) {
+  .containers {
+    text-align: start;
+  }
   .card-header {
     font-size: 1.5em;
     font-weight: 800;
     margin-top: 1em;
   }
   .card-text {
-    font-size: 1em;
-    margin-top: 1.2;
+    font-size: 0.95em;
   }
   .image-cpontianer {
     margin: 0em;
-    margin-top: -5em;
+    margin-top: -4em;
   }
 }
