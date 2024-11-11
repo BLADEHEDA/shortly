@@ -11,6 +11,7 @@ export const desktopButtonStyle = {
   borderRadius: "30px",
   width: "100%",
   padding: "1.2em",
+  fontSize: "1.2em",
 };
 export const formButtonStyle = {
   background: "#2acfcf",
