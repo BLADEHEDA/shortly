@@ -3,6 +3,7 @@
     text-align: center;
     padding: 2em;
     color: white;
+    padding-bottom: 3em;
 }
 .footer-icon-div{
     display: flex;
@@ -18,16 +19,17 @@
     margin-bottom:1em;
 }
 h3{
-    font-size: 1.5em;
+    font-size: 1.05em;
     font-weight: 700;
     margin-top:2em;
 }
 p{
-    font-size: 1.1em;
+    font-size: 1em;
     margin-top: 0.5em;
 }
 .foooter p{
     margin-top: 1em;
+
 }
 
 @media only screen and (min-width: 1024px) {

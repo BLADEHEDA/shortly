@@ -12,9 +12,11 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-top: 1em;
   }
   .hamburger {
     font-size: 2em;
+    color: var(--Gray);
   }
   .logo{
     margin-top: 2px;

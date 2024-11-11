@@ -24,7 +24,7 @@ export const formButtonStyle = {
 export const heroButtonStyle = {
   background: "#2acfcf",
   borderRadius: "30px",
-  padding: "1.2em",
+  padding: "1.4em 2em",
   fontSize: "1.2em",
 };
 export const shortenedButtonStyle = {
