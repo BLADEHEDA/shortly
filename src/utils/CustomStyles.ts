@@ -26,7 +26,6 @@ export const heroButtonStyle = {
   padding: "1.2em",
   fontSize: "1.2em",
 };
-
 export const shortenedButtonStyle = {
   background: "#2acfcf",
   borderRadius: "10px",
