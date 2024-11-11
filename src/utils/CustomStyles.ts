@@ -1,4 +1,4 @@
-const baseButtonStyle = {
+export const buttonStyle = {
   background: "#2acfcf",
   borderRadius: "30px",
   width: "100%",
@@ -6,32 +6,32 @@ const baseButtonStyle = {
   fontSize: "1.2em",
 };
 
-// Refactored button styles
-export const buttonStyle = {
-  ...baseButtonStyle,
-};
-
 export const desktopButtonStyle = {
-  ...baseButtonStyle,
+  background: "#2acfcf",
+  borderRadius: "30px",
+  width: "100%",
   padding: "1.2em",
 };
-
 export const formButtonStyle = {
-  ...baseButtonStyle,
-  borderRadius: "10px", 
+  background: "#2acfcf",
+  borderRadius: "10px",
+  width: "100%",
+  padding: "1.5em",
+  fontSize: "1.2em",
   fontWeight: "900 !important",
 };
-
 export const heroButtonStyle = {
-  ...baseButtonStyle,
-  padding: "1.2em 1.5em", 
-  boxSizing: "border-box",
+  background: "#2acfcf",
+  borderRadius: "30px",
+  padding: "1.2em",
+  fontSize: "1.2em",
 };
 
 export const shortenedButtonStyle = {
-  ...baseButtonStyle,
+  background: "#2acfcf",
   borderRadius: "10px",
-  padding: "1em 2em", 
-  fontSize: "1em", 
+  width: "100%",
+  padding: "1em 2em",
+  fontSize: "1em",
   fontWeight: "900 !important",
 };
