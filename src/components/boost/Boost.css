@@ -5,16 +5,20 @@
   background-image: url("../../../public//bg-boost-mobile.svg");
 }
 .boost-header {
-  font-size: 2em;
+  font-size: 1.7em;
   width: 100%;
   font-weight: 700;
   color: white;
   margin-bottom: 0.5em;
+  text-align: center;
 }
 .button {
   width: 50%;
   margin: 0 auto;
   font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+
 }
 
 @media only screen and (min-width: 1024px) {
