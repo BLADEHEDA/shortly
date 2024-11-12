@@ -29,6 +29,7 @@ p{
 }
 .foooter p{
     margin-top: 1em;
+    color: var(--Gray);
 
 }
 
